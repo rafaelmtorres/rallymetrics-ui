@@ -1,0 +1,8 @@
+<div>
+    <form action="milestoneForm">
+        <label for="milestone">Select your milestone: </label>
+        <select name="milestone" id="milestoneSelect" ng-model="ngModel"  ng-options="milestone.name for milestone in milestoneList | orderBy: 'name'">
+            <option value="">Choose a milestone</option>
+        </select>
+    </form>
+</div>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="rallymetricsui" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="rallymetricsui" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="rallymetricsui" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="rallymetricsui" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>R9 metrics</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">R9 metrics</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+      <!--form class="navbar-form navbar-right">
+        <input type="text" class="form-control" placeholder="Search...">
+      </form-->
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <side-menu-directive></side-menu-directive>
+  <div class="row">
+    <div ng-view></div>
+  </div>
+</div>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/chart.js/dist/Chart.bundle.min.js"></script>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/js/bootstrap.js">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.routes.js"></script>
+
+  <script src="config/restConfig.js"></script>
+  <script src="config/statusConfig.js"></script>
+  <script src="config/endpointConfig.js"></script>
+  <script src="config/interceptorsConfig.js"></script>
+  <script src="config/chartColorConfig.js"></script>
+
+  <script src="releases/releasesCtrl.js"></script>
+  <script src="releases/releasesService.js"></script>
+
+  <script src="report/reportCtrl.js"></script>
+
+  <script src="components/sideMenu/sideMenuDirective.js"></script>
+  <script src="components/sideMenu/sideMenuCtrl.js"></script>
+
+  <script src="components/milestoneSelect/milestoneSelectDirective.js"></script>
+
+  <script src="components/statusPieChart/statusPieChartDirective.js"></script>
+  <script src="components/codeReviewPieChart/codeReviewPieChartDirective.js"></script>
+
+  <script src="interceptors/errorPageInterceptor.js"></script>
+</body>
+</html>
