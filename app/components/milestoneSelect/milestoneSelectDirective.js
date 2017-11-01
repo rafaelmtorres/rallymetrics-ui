@@ -9,7 +9,7 @@ milestoneSelect.$inject = ['releasesService'];
 function milestoneSelect(releasesService) {
     let directive = {
         restrict: 'E',
-        templateUrl: 'components/milestoneSelect/milestoneSelect.html',
+        templateUrl: '../app/components/milestoneSelect/milestoneSelect.html',
         scope: {
             ngModel: "="
         },

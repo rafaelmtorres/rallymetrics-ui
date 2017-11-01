@@ -2,7 +2,7 @@
  * Created by rtorres on 31/07/2017.
  */
 
-app.controller('sideMenuCtrl', function ($scope) {
+angular.module('rallymetricsui').controller('sideMenuCtrl', function ($scope) {
 
     $scope.menuItems = [{route: '#!releases', description: 'Release'}, {route: '#!report', description: 'Report'}];
 

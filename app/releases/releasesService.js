@@ -2,7 +2,7 @@
  * Created by rtorres on 27/07/2017.
  */
 
-app.service("releasesService", function ($http, endPointConfig, restConfig) {
+angular.module('rallymetricsui').service("releasesService", function ($http, endPointConfig, restConfig) {
 
     const baseURL = `${endPointConfig.host}:${endPointConfig.basePort}${endPointConfig.baseURI}`;
 

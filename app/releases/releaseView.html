@@ -3,8 +3,10 @@
 
     <milestone-select-directive ng-model="Release.milestoneSelected"/>
 
-    <h2 class="sub-header">{{::Release.userStoriesTitle}} : {{Release.uiUserStories.length}}</h2>
     <div class="table-responsive">
+    <h2 class="sub-header">{{::Release.userStoriesTitle}} : {{Release.uiUserStories.length}}</h2>
+
+
         <table class="table table-striped">
             <thead>
             <tr>
@@ -27,7 +29,7 @@
             </tr>
             </tbody>
         </table>
-    </div>
+    <div>
 
     <h2 class="sub-header">{{::Release.defectsTitle}} : {{Release.uiDefects.length}}</h2>
     <div class="table-responsive">

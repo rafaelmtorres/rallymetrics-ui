@@ -7,7 +7,7 @@ angular.module('rallymetricsui').directive('codeReviewPieChartDirective', codeRe
 function codeReviewPieChart() {
     let directive = {
         restrict: 'E',
-        templateUrl: 'components/codeReviewPieChart/codeReviewPieChartView.html',
+        templateUrl: '../app/components/codeReviewPieChart/codeReviewPieChartView.html',
         scope: {
             ngModel : '='
         },

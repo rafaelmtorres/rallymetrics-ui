@@ -8,7 +8,7 @@ module.exports = {
     //Application entrypoint
     entry:{
       app : "./app/app.module.js",
-      vendor: ["jquery", "angular", "chart.js"]
+      vendor: ['jquery', 'angular', 'angular-route', 'chart.js']
     },
 
     //Results of operations done by webpack
@@ -33,9 +33,10 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({}),
+        //new webpack.optimize.UglifyJsPlugin({}),
         new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.bundle.js' }),
         new webpack.ProvidePlugin({
+            'window.jQuery': 'jquery',
             $: 'jquery',
             jQuery: 'jquery'
         })
